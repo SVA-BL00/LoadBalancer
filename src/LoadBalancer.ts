@@ -1,6 +1,7 @@
 import { Server } from "./models/Server"
 import { Subject } from "./patterns/Observer"
 
+// Se implementa el Round Robin, tomándose el servidor siguiente.
 export class LoadBalancer extends Subject{
     private servers: Server[];
     private curr: number = 0;

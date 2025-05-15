@@ -1,3 +1,4 @@
+// Patrón Chain Handler que puede manejar o log in o authentication
 export abstract class ChainHandler{
     private nextHandler: ChainHandler | null = null;
     public setNext(handler: ChainHandler): ChainHandler{

@@ -1,3 +1,4 @@
+// Patrón observer con el que notifica qué request está siendo manejado por qué server.
 export interface Observer{
     update(serverName: string): void;
 }

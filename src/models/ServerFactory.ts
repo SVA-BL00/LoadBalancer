@@ -6,6 +6,7 @@ export class ServerFactory{
 
     private constructor(){}
 
+    // Patrón Singleton
     public static getInstance(): ServerFactory{
         if(!ServerFactory.instance){
             ServerFactory.instance = new ServerFactory();
